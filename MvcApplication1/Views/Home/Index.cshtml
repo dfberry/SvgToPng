@@ -1,0 +1,22 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+@section AddCSS{
+    <link href="@Url.Content("~/Content/TelerikKendoUI/kendo.common.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/SvgToPng.css")" rel="stylesheet" type="text/css" />
+
+}
+<input type="button" id="convert" value="convert" />
+<div >
+    <div class="select">
+        <div id="piechart">
+        </div>
+    </div>
+    <div class="select">
+        <img id="image" src="" />
+    </div>
+</div>
+@section AddJS{
+    <script src="@Url.Content("~/Scripts/TelerikKendoUI/kendo.all.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/SvgToPng.js")" type="text/javascript"></script>
+}
